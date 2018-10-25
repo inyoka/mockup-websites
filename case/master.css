@@ -1,0 +1,233 @@
+/* This file is ordered by specificity as follows ... */
+/* Semantic Sections, Content Elements, Classes and then ID's */
+/* Media selectors follow after the main CSS, and follow the same layout. */
+
+/* SYMANTIC SECTIONS */
+
+body{
+  background-color: white;
+  background: white;
+  /* text-align: center; */
+  min-height: 100vh;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+header span{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+nav{
+  padding: 0;
+  margin: 0;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  height: auto;
+  bottom: 0;
+  left: 0;
+  align-items: flex-start;
+}
+#contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 200px;
+
+}
+
+
+nav, h2, footer{
+  background-color: rgb(8,208,223);
+  background: rgb(8,208,223) ;
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: auto;
+  align-items: center;
+}
+
+article{
+  flex: auto;
+  margin: 40px 10px;
+}
+
+article p{
+  max-width: 200px;
+}
+
+aside{
+
+}
+
+/* CONTENT TYPE */
+
+h2{
+  padding: 10px 40px;
+}
+
+p{
+  min-width: 200px;
+  text-align: center;
+  margin: 10px;
+}
+
+#sectionTwo p{
+  min-width: 150px;
+}
+
+/* CLASSESS */
+
+.ipacLogo{
+  width: 150px;
+  height: auto;
+}
+
+.kumalaLogo{
+  width: 100px;
+  height: auto;
+}
+
+.case{
+  align-content: left;
+  align-items: left;
+}
+.caseLogo{
+  margin: 10px 0;
+  width: 150px;
+  height: auto;
+}
+
+.address{
+  display: flex;
+  flex-direction: row;
+}
+
+#address table{
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.alamat{
+  display: flex;
+  flex-direction: row;
+}
+
+.flexrow{
+  display: flex;
+  flex-direction: column;
+}
+
+.intro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#sectionTwo{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#sectionTwo article{
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-link {
+  text-transform:uppercase;
+  font-weight: bolder;
+  font-size: 1.5em;
+}
+
+.square{
+  width: 200px;
+  height: 200px;
+  background: purple;
+  min-width: 200px;
+}
+
+.small-square{
+  width: 150px;
+  height: 150px;
+  background: red;
+  min-width: 150px;
+}
+
+
+/* SPECIFIC ID'S  */
+
+
+#social{
+    align-self: flex-end;
+    padding: 0;
+    margin: 0;
+}
+#test{
+  font-size: 1em;
+  background: black;
+  background-color: black;
+  color: white;
+  text-transform:none;
+  text-align: center;
+  font-weight: normal;
+}
+
+/*
+Media Selectors ...
+Sizes sm 576, md 768, lg 992, and xl 1200px.
+*/
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  main {
+  flex: 1;
+  }
+  section{
+    flex-direction: row;
+  }
+  #sectionTwo{
+    flex-wrap: nowrap;
+  }
+  #sectionOne .highschool{
+    flex-direction: column-reverse;
+  }
+  #contact{
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1200px) {
+
+}
